@@ -1,7 +1,6 @@
-package by.bsuir.povalyaeva.task4.runner;
+package by.bsuir.povalyaeva.task5.runner;
 
 import by.bsuir.povalyaeva.DataScanner;
-import by.bsuir.povalyaeva.task4.util.Util;
 
 public class Runner {
 
@@ -14,7 +13,6 @@ public class Runner {
         for (int index = 0; index < length; index++) {
             numbers[index] = DataScanner.enterIntegerNumber();
         }
-        // Номера позиций начинаются с нуля
-        System.out.print("Positions of array prime numbers are: " + Util.findPrimeNumbersPositions(numbers));
+        System.out.print("Min number of elements is : ");
     }
 }

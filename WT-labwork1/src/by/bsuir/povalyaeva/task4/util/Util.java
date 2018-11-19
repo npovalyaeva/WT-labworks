@@ -6,7 +6,7 @@ import java.util.ArrayList;
 Если да, то вывести номера этих элементов.*/
 
 public class Util {
-    public static String FindPrimeNumbers(int[] numbers) {
+    public static String findPrimeNumbersPositions(int[] numbers) {
         List<String> positionsList = new ArrayList<String>();
 
         for (int i = 0; i < numbers.length; i++) {
