@@ -19,11 +19,25 @@ public class DataScanner {
         return in.nextDouble();
     }
 
+    public static int enterIntegerNumber() {
+            while (!in.hasNextInt())
+                in.next();
+            return in.nextInt();
+    }
+
+    public static int enterNaturalNumber() {
+        int num;
+        do
+            num = enterIntegerNumber();
+        while (num < 1);
+        return num;
+    }
+
     public static String transformDoubleToUserFormat(double number, String pattern) {
         return new DecimalFormat(pattern).format(number);
     }
 
-    public static boolean isEnd() {
-        return (in.nextLine() == "end") ? true : false;
-    }
+    //public static boolean isEnd() {
+    //   return (in.nextLine() == "end") ? true : false;
+    //}
 }

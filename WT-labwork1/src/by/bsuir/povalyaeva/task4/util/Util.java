@@ -6,12 +6,14 @@ import java.util.ArrayList;
 Если да, то вывести номера этих элементов.*/
 
 public class Util {
-    public static Integer[] FindPrimeNumbers(int[] numbers) {
-        List<Integer> positionsList = new ArrayList<Integer>();
+    public static String FindPrimeNumbers(int[] numbers) {
+        List<String> positionsList = new ArrayList<String>();
+
         for (int i = 0; i < numbers.length; i++) {
             if (PrimeNumber.isPrimeNumber(numbers[i]))
-                positionsList.add(i);
+                positionsList.add(String.valueOf(i));
         }
-        return positionsList.toArray(new Integer[positionsList.size()]);
+        //return positionsList.toArray(new Integer[positionsList.size()]);
+        return String.join(" ", positionsList);
     }
 }
